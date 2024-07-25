@@ -11,7 +11,7 @@ The fundamental setup tasks (e.g., environment setup and pretrained weights prep
 ](https://github.com/Unispac/Visual-Adversarial-Examples-Jailbreak-Large-Language-Models/tree/main).
 
 ### Attack on MiniGPT-4
-After injecting toxic semantics into the adversarial image using the VAJM method, using the following multimodal attack strategy to maximize the probability of the model following the malicious instructions:
+After injecting toxic semantics into the adversarial image using the VAJM method, use the following multimodal attack strategy to maximize the probability of the model following the malicious instructions:
 ```bash
 python minigpt_vlm_attack.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0 --n_iters 5000  --alpha 1 --save_dir vlm_unconstrained
 ```
