@@ -17,15 +17,15 @@ python minigpt_vlm_attack.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-i
 ```
 
 ### Evaluation
-We provide code for evaluation on two different datasets:
+We provide the test code for using off-the-shelf adversarial examples on two different datasets:
 
 #### Evaluation on VAJM test set
 
 ```bash
-python minigpt_test_manual_prompts_vlm.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0 --image_path  vlm_unconstrained/bad_prompt.bmp
+python minigpt_test_manual_prompts_vlm.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0 --image_path  adversarial_images/bad_vlm_prompt.bmp
 ```
 #### Evaluation on Advbench
 ```bash
-python minigpt_test_advbench.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0 --image_path  vlm_unconstrained/bad_prompt.bmp
+python minigpt_test_advbench.py --cfg-path eval_configs/minigpt4_eval.yaml  --gpu-id 0 --image_path  adversarial_images/bad_vlm_prompt.bmp
 ```
 
