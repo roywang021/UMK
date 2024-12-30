@@ -108,7 +108,7 @@ class Prompt:
 
                 for i, seg in enumerate(prompt_segs)
             ]
-            item_offset=seg_tokens[0].shape[1]+seg_tokens[1].shape[1]
+            item_offset=seg_tokens[0].shape[1]+seg_tokens[1].shape[1]+32
             self.offset.append(item_offset)
 
             self.adv_len=seg_tokens[2].shape[1]
